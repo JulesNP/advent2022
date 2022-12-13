@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="solution/1.fs" />
+    <Compile Include="solution/2.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
