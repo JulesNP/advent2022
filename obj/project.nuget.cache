@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "73GxGvL3IgZlwOx1AtkjL5tlwHLnPwSKIGDGHUtqw9IunQoKE8OkiRLaP1cWNOQDkyON+kzXINtaY4EMPtbUrw==",
+  "success": true,
+  "projectFilePath": "/home/runner/advent2022/advent2022.fsproj",
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

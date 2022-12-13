@@ -1,4 +1,4 @@
-run = "echo Configure me!"
+run = "dotnet run"
 
 [nix]
 channel = "stable-22_11"
