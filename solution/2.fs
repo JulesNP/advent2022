@@ -20,16 +20,17 @@ let versus x y =
 
 let solve part input =
     let decode1 (s: string) =
-        enum<RPS>(int s[0] - 64),
-        enum<RPS>(int s[2] - 87)
+        enum<RPS> (int s[0] - 64), enum<RPS> (int s[2] - 87)
 
     let decode2 (s: string) =
-        let opponent = enum<RPS>(int s[0] - 64)
+        let opponent = enum<RPS> (int s[0] - 64)
+
         let result =
             match s[2] with
             | 'X' -> Result.Loss
             | 'Y' -> Result.Tie
             | _ -> Result.Win
+
         match opponent, result with
         | RPS.Rock, Result.Win -> opponent, RPS.Paper
         | RPS.Rock, Result.Loss -> opponent, RPS.Scissors
@@ -47,3 +48,4 @@ let solve part input =
         | _ -> failwith "Invalid input"
     )
     |> Seq.sumBy (fun (x, y) -> int y + int (versus y x))
+    |> sprintf "%d"

@@ -1,6 +1,6 @@
 { pkgs }: {
-    deps = [
-        pkgs.wget
-        pkgs.dotnet-sdk_7
-    ];
+  deps = [
+    pkgs.dotnet-sdk_7
+  ];
 }
+
